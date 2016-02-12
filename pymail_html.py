@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
 import smtplib
+import socket
 
 sender = 'dmitry.pavlov@ecommerce.com'
 recipient = 'dethmix@gmail.com'
@@ -18,5 +19,7 @@ try:
 	smtpObj = smtplib.SMTP('localhost')
 	smtpObj.sendmail(sender, recipient, message)
 	print 'Message was sent'
-except SMTPException:
-	print "ERROR:message was NOT sent"
+except smtplib.SMTPException:
+	print "ERROR: message was NOT sent"
+except socket.error:
+	print "ERROR: wasn't able to establish connection to the host"
