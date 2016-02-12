@@ -3,11 +3,11 @@
 import smtplib
 import socket
 
-sender = 'dmitry.pavlov@ecommerce.com'
-recipient = 'dethmix@gmail.com'
+sender = 'sender@domain.com'
+recipient = 'recipient@domain.com'
 
-message = """From: <dmitry.pavlov@ecommerce.com>
-To: <dethmix@gmail.com>
+message = """From: <sender@domain.com>
+To: <recipient@domain.com>
 Subject: html based email message
 MIME-Version: 1.0
 Content-type: text/html

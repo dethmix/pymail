@@ -2,11 +2,11 @@
 
 import smtplib
 
-send = 'dmitriy.pavlov@ecommerce.com'
-recipient = 'dethmix@gmail.com'
+send = 'sender@domain.com'
+recipient = 'recipient@domain.com'
 
-message = """From: <dmitriy.pavlov@ecommerce.com>
-To: <dethmix@gmail.com>
+message = """From: <sender@domain.com>
+To: <recipient@domain.com>
 Subject: 'Hello pymail'
 
 
